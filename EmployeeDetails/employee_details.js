@@ -81,6 +81,6 @@ function findEmployeeBySpecialization(employeeSpecialization) {
     ).innerHTML = `<p>${foundEmployee.id}: ${foundEmployee.name}: ${foundEmployee.specialization}</p>`;
   } else {
     document.getElementById("employeesDetails").innerHTML =
-      "no employee has been found with this ID";
+      "no employee has been found with this Specialization";
   }
 }
