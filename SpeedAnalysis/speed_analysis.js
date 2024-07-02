@@ -26,6 +26,7 @@ function endTest() {
   var userTypedText = document.getElementById("userInput").value;
 
   // Split the text using regex to count words correctly
+  var totalLengths = userTypedText.length;
   var typedWords = userTypedText.split(/\s+/).filter(function (word) {
     return word !== "";
   }).length;
@@ -40,6 +41,8 @@ function endTest() {
   var outputDiv = document.getElementById("output");
   outputDiv.innerHTML =
     "<h2>Typing Test Results:</h2>" +
+    "<p>Total Length: " +
+    totalLengths +
     "<p>Words Typed: " +
     typedWords +
     "</p>" +
