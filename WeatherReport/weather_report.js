@@ -10,6 +10,7 @@ function showweatherDetails(event) {
       const weatherInfo = document.getElementById("weatherInfo");
       weatherInfo.innerHTML = `<h2>Weather in ${data.name}</h2>
                             <p>Temperature: ${data.main.temp} &#8451;</p>
+                            <p>Humidity: ${data.main.humidity} %;</p>
                             <p>Weather: ${data.weather[0].description}</p>`;
     })
     .catch((error) => {
